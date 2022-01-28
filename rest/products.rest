@@ -1,0 +1,45 @@
+GET http://localhost:8080/products/
+
+###
+
+GET http://localhost:8080/products/single/158
+Content-Type: application/json
+
+{
+  "userId": 441
+}
+
+###
+
+GET http://localhost:8080/products/latest
+
+###
+
+GET http://localhost:8080/products/mostpopulars
+
+###
+
+POST http://localhost:8080/products/
+Content-Type: application/json
+
+{
+  "name": "testproduct"
+}
+
+###
+
+GET http://localhost:8080/products/latest
+Content-Type: application/json
+
+{
+  "userId": 441
+}
+
+###
+
+GET http://localhost:8080/products/bycampaignid
+Content-Type: application/json
+
+{
+  "campaignId": 5
+}

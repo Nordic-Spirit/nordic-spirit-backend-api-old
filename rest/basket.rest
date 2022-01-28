@@ -1,0 +1,14 @@
+POST http://localhost:8080/basket HTTP/1.1
+Content-Type: application/json
+
+{
+  "productId": 14
+}
+
+###
+
+GET http://localhost:8080/basket/count
+
+###
+
+GET http://localhost:8080/basket
